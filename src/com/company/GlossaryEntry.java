@@ -30,8 +30,14 @@ public class GlossaryEntry {
 
     }
     public String toString(){
-      String g = word + numsList;
-      return g; 
+      String g = "";
+      for(int i = 0; i < numsList.size(); i++) {
+          int h = numsList.get(i);
+          g = g + " " + h;
+      }
+      String j = getWord() + g;
+      return j;
+
     }
 
     public static void main(String[] args) {
